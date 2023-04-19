@@ -38,6 +38,11 @@ public class ListaElementos {
         return estado;
     }
 
+    public String getLetra() {
+        String laPrimera = name.substring(0, 1);
+        return laPrimera;
+    }
+
     public void setEstado(String estado) {
         this.estado = estado;
     }

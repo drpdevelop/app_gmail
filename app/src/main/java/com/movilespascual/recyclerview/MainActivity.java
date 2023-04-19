@@ -19,13 +19,16 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        init();
+        init(); 
     }
 
     public void  init(){
         elementos = new ArrayList<>();
-        //elementos.add(new ListaElementos("#7B1FA2","Pedro","Ciudad de México","Activo"));
-        
+        elementos.add(new ListaElementos("#7B1FA2","Pedro","Medellín","Leido"));
+        elementos.add(new ListaElementos("#CA3BEB","Danilo","Bucaramanga","No leido"));
+        elementos.add(new ListaElementos("#3DA3F5","Estefania","Manizales","Leido"));
+        elementos.add(new ListaElementos("#43DE48","Darney","España","No leido"));
+        elementos.add(new ListaElementos("#EB634D","Elvis","Ciudad de México","Leido"));
 
         ListAdapter listAdapter = new ListAdapter(elementos,this);
         RecyclerView recyclerView = findViewById(R.id.listRecyclerView);

@@ -13,6 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:animateLayoutChanges="true"
+        android:id="@+id/view_detail"
         android:orientation="vertical">
 
         <RelativeLayout
@@ -21,15 +22,36 @@
             android:orientation="horizontal"
             android:padding="6dp">
 
+            <LinearLayout
+                android:layout_marginStart="5dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/letra"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/circle_shape"
+                    android:text="HS"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    style="@style/TextAppearance.AppCompat.Headline"
+                    />
+
+            </LinearLayout>
+
             <ImageView
                 android:id="@+id/iconoImageView"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_alignParentStart="true"
                 android:layout_centerVertical="true"
+                android:layout_marginEnd="20dp"
                 android:paddingLeft="14dp"
                 android:paddingRight="14dp"
-                android:src="@drawable/outline_contact_mail_24"
                 android:layout_alignParentLeft="true">
 
             </ImageView>
@@ -66,7 +88,6 @@
                     android:textSize="18sp">
 
                 </TextView>
-
             </LinearLayout>
 
 
